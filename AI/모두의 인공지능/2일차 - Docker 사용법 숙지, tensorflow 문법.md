@@ -12,7 +12,7 @@ docker rmi [이미지명] : docker image 삭제
   
 docker image에 접속해서 하는 작업은 각 container에 저장된다.
   
-* tensoflow docker 컨테이너 시작  
+* tensorflow docker 컨테이너 시작  
 > GPU 사용 가능 확인 : $ lspci | grep -i nvidia  
 nvidia-docker 설치 확인 : $ docker run --gpus all --rm nvidia/cuda nvidia-smi  
 TensoFlow GPU 이미지 사용, 컨테이너에서 bash 셀 세션 시작 :  
