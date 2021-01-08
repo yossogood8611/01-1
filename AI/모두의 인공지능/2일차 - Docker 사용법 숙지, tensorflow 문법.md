@@ -45,7 +45,7 @@ $ docker run --gpus all -it tensoflow/tensorflow:latest-gpu bash
 - cost function의 모양을 확인해야함
 
 
-# 힉습이 끝나고
+# 학습이 끝나고
   
 1. 모두 docker에서 tensorflow를 깔기 시작하니 용량이 부족하고 노트북이 렉이 걸려서 강의만 듣고 긴급 회의를 하기로 했다. 
 2. 지금까지는 예전에 들었던 내용이라 복습하는 기분이었고 실습을 해보고싶다.
