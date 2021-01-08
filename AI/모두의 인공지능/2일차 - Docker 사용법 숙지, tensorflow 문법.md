@@ -1,4 +1,4 @@
-# 모두의 인공지능 - (Lab 2~ )
+# 모두의 인공지능 - (Lab 2~3 )
 
 2021/01/08  
     
@@ -18,10 +18,34 @@ nvidia-docker 설치 확인 : $ docker run --gpus all --rm nvidia/cuda nvidia-sm
 TensoFlow GPU 이미지 사용, 컨테이너에서 bash 셀 세션 시작 :  
 $ docker run --gpus all -it tensoflow/tensorflow:latest-gpu bash
 
-# Lab 1
+# Lec 2
+
+### Linear Regression  
+- 세상의 현상을 Linear regresstion으로 설명할 수 있는 경우가 많다.  
+- (Linear) Hypothesis : H(x) = Wx + b -> 첫 번째 단계
+- Cost function (Loss function) : 가설과 실제 데이터와의 차이 계산  
+-> (H(x)-y)^2 로 계산, data 개수만큼 나눔  
+- minimize cost(W,b) -> cost를 최소화 하는 W와 b를 구하게 하는 것이 학습의 목표  
+
+# Lab 2  
   
-1. 
+노트북 용량 부족으로 인해 docker 사용이 어려워 1시간 넘게 필요없는 파일을 삭제해도 606MB밖에 남지 않아서 보류 (nvidia 다운 용량 약 4GB)
+
+# Lec 3  
+  
+### Simplified hypothesis  
+- H(x) = Wx  
+
+### Gragient descent algorithm  
+- cost function을 minimize하는 것에 사용  
+- cost(W,b)에서 W,b의 minimize cost를 찾게 해줌  
+- 동작 방법
+-> 아무곳에서나 시작, W를 조금 줄이고 경사도를 계산함을 반복  
+-> 항상 최저점에 도달하게 됨  
+- cost function의 모양을 확인해야함
+
 
 # 힉습이 끝나고
   
-1. 
+1. 모두 docker에서 tensorflow를 깔기 시작하니 용량이 부족하고 노트북이 렉이 걸려서 강의만 듣고 긴급 회의를 하기로 했다. 
+2. 지금까지는 예전에 들었던 내용이라 복습하는 기분이었고 실습을 해보고싶다.
